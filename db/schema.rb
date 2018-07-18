@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 2018_07_18_221900) do
     t.string "name"
   end
 
-  create_table "instuctions", force: :cascade do |t|
+  create_table "instructions", force: :cascade do |t|
     t.string "step"
   end
 
