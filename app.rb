@@ -10,6 +10,27 @@ get ("/") do
 end
 
 post ("/") do
-  binding.pry
   erb(:index)
+end
+
+get("/recipes") do
+  @recipes = Recipe.all()
+  erb(:recipes)
+end
+
+post("/recipes") do
+  name = params.fetch("recipe_name")
+  Recipe.create({:name => name})
+  redirect("/recipes")
+end
+
+get("/ingredients") do
+  @ingredients = Ingredient.all()
+  erb(:ingredients)
+end
+
+post("/recipes") do
+  name = params.fetch("recipe_name")
+  Recipe.create({:name => name})
+  redirect("/recipes")
 end

@@ -1,4 +1,4 @@
-class Instruction < ActiveRecord::Base
-  has_many :recipes
-  has_many :ingredients, through: :recipes
-end
+# class Instruction < ActiveRecord::Base
+#   has_many :recipes
+#   has_many :ingredients, through: :recipes
+# end
