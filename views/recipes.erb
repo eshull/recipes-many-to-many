@@ -26,3 +26,20 @@
   <input type="text" name="recipe_name" id="recipe_name">
   <button type="submit">Add Recipe</button>
 </form>
+
+
+
+  <form class="container form-group button" action="/recipes/delete" method="delete" name="recipesr">
+    <select id="recipe_delete" name="recipe_delete">
+     <%if @recipes != []%>
+      <% @recipes.each do |recipe| %>
+       <option value = "<%= recipe.id %>" > <%= recipe.name %> </option>
+       <% end %>
+       <% else %>
+       <option value="" disabled selected>no recipes yet</option>
+       <% end %>
+     </select>
+    <button  type="submit" class="btn btn-info"name="button">Delete A recipe</button>
+  </form>
+  <br>
+  <br>
