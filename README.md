@@ -40,7 +40,7 @@ Navigate to `localhost:4567` in browser.
 License
 -------
 
-MIT Copyright 2018 **Nick Brown and Craig Wann**
+MIT Copyright 2018 **Nick Brown, Craig Wann and Eric Shull**
 
 ***Small change to README added to bookmark completion of one-to-many relationship between employees and projects***
 
